@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+       <title>MatginonBar&Restaurant</title>
+    </head>
+    <body>
+        <div class="grid-container">
+            <header class="header">
+                <div class="brand">
+                    <button onclick="openMenu()">
+                        &#9776;
+                    </button>
+                    <a href="index.html">MatignonBar&Restaurant</a>
+                </div>
+                <div class="header-links">
+                    <a href="Signing.html">Cart</a>
+                    <a href="Cart.html">Sign In</a>
+                </div>
+            </header>
+            <aside class="sidebar">
+                <h3>Shopping Categories</h3>
+                <button class="close-button" onclick="closeMenu()">x</button>
+                <ul>
+                    <li>
+                        <a href="index.html">Nourritures</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Bierres</a>
+                    </li>
+                </ul>
+            </aside>
+            <main class="main">
+                <div class="content">
+                    <ul class="products">
+                        <li>
+                            <div class="product">
+                                <img class="product-image" src="images/haricot.jpg" alt="product">
+                                <div class="product-name"><a href="product.html">Beignet Au Sucre</a></div>
+                                <div class="product-brand">Complements</div>
+                                <div class="product-price">25 FCFA</div>
+                                <div class="product-rating">4.5 Stars(4reviews)</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product">
+                                <img class="product-image" src="images/haricot.jpg" alt="product">
+                                <div class="product-name"><a href="product.html">Beignet Au Sucre</a></div>
+                                <div class="product-brand">Complements</div>
+                                <div class="product-price">25 FCFA</div>
+                                <div class="product-rating">4.5 Stars(4reviews)</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product">
+                                <img class="product-image" src="images/riz.jpg" alt="product">
+                                <div class="product-name"><a href="product.html">Beignet Au Sucre</a></div>
+                                <div class="product-brand">Complements</div>
+                                <div class="product-price">25 FCFA</div>
+                                <div class="product-rating">4.5 Stars(4reviews)</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product">
+                                <img class="product-image" src="images/BIERE-33-2020.png" alt="product">
+                                <div class="product-name"><a href="product.html">Beignet Au Sucre</a></div>
+                                <div class="product-brand">Complements</div>
+                                <div class="product-price">25 FCFA</div>
+                                <div class="product-rating">4.5 Stars(4reviews)</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product">
+                                <img class="product-image" src="images/BIERE-33-2020.png" alt="product">
+                                <div class="product-name"><a href="product.html">Beignet Au Sucre</a></div>
+                                <div class="product-brand">Complements</div>
+                                <div class="product-price">25 FCFA</div>
+                                <div class="product-rating">4.5 Stars(4reviews)</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product">
+                                <img class="product-image" src="images/castel.jpg" alt="product">
+                                <div class="product-name"><a href="product.html">Beignet Au Sucre</a></div>
+                                <div class="product-brand">Complements</div>
+                                <div class="product-price">25 FCFA</div>
+                                <div class="product-rating">4.5 Stars(4reviews)</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="product">
+                                <img class="product-image" src="images/viande.jpg" alt="product">
+                                <div class="product-name"><a href="product.html">Beignet Au Sucre</a></div>
+                                <div class="product-brand">Complements</div>
+                                <div class="product-price">25 FCFA</div>
+                                <div class="product-rating">4.5 Stars(4reviews)</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>          
+            </main>
+            <footer class="footer">
+                All Right Reserved.
+            </footer>
+        </div>
+        <script>
+            function openMenu(){
+                document.querySelector(".sidebar").classList.add("Open")
+            }
+
+            function closeMenu(){
+                document.querySelector(".sidebar").classList.remove("Open")
+            }
+        </script>
+    </body>
+</html>

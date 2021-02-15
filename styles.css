@@ -1,0 +1,153 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+} 
+body{
+    font:1.6rem Helvetica;
+    height: 100vh;
+    margin: 0rem;
+}
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem 1fr 5rem  ;
+    height: 100%;
+}
+.header{
+    background-color: #203040;
+    color: #ffffff;
+    grid-area: header;
+    display:flex;
+    justify-content: space-between;
+    align-items: center; /*centre les elements du header */
+    padding: 1.5rem;
+}
+.brand a{
+    color:#ffffff;
+    font-size: 2.5rem;
+    font-weight:bold;
+    text-decoration: none;/* enleve les soulignés sur les mots */ 
+}
+.header-links a{
+    color: white;
+    text-decoration: none;
+}
+.header-links a:hover{
+    color:orangered;
+}
+.main{
+    grid-area: main;
+}
+.footer{
+    background-color: #203040;
+    color: white;
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+/*  Home Screen */
+
+a{
+    text-decoration: none;
+
+}
+a:hover{
+    color:orangered;
+}
+.products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;/* rendre mes images responsives*/
+}
+
+.product{
+display:flex;
+flex-direction: column;
+justify-content: space-between;
+height: 100%; 
+}
+
+.products li{
+    list-style-type: none;
+    padding:0;
+    flex:0 1 34rem;
+    margin:1rem;
+    height:50rem;
+    border-bottom:.1rem #c0c0c0 solid;
+}
+
+.product-name{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.product-name a:hover{
+    columns: #ff8000;
+}
+
+.product-price{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.product-image{
+    
+    max-width: 40rem;
+    max-height: 40rem;
+    border-radius:5rem;
+    
+}
+.product-rating{
+    margin-bottom: 3rem;
+}
+
+/*  Side Bar  */
+
+.brand button{
+    font-size: 3rem;
+    padding :.5rem;
+    background:none;
+    border:none;
+    color:white;
+    cursor: pointer;
+}
+
+.sidebar{
+    position: fixed;
+    transform: translateX(-30rem);
+    width: 30rem;
+    background-color: #f0f0f0;
+    height: 100%;
+}
+.sidebar.Open{
+    transform: translateX(0);
+}
+.close-button{
+    border-radius: 1rem;
+    font-size: 2rem;
+    position:absolute;
+    right:0.5rem;
+    top: 1.5rem;
+    cursor: pointer;
+}
+.sidebar li{
+    color: blue;
+    text-decoration: none;
+    text-align:left;
+    list-style-type: none;
+    margin: 1rem;
+    
+}
+
+.sidebar ul{
+    padding-left: .1rem;
+    font-size: 2rem;
+
+}
